@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gonzales-pe": "^2.0.2"
+    "gonzales-pe": "^3.0.0-10"
   }
 }
