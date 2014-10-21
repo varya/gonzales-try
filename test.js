@@ -1,5 +1,9 @@
-var gonzales = require('gonzales-pe');
+var gonzales = require('gonzales-pe'),
+    fs = require('fs');
 
-var css = 'a { color: tomato }';
+var source = fs.readFileSync('_styleguide_variables.scss', 'utf-8');
 
-console.log(gonzales.cssToAST(css));
+console.log(gonzales.srcToAST({
+  src: source,
+  syntax: 'sass'
+}));
